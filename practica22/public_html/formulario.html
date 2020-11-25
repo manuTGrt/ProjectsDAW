@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Coches!!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="miEstiloP3.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header id="cabecera">
+            <h1>Coches!!</h1>
+            <img src="img/coche_inicio.jpg" alt="inicio" width="50%"/>
+        </header>
+        <nav id="navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a>
+                    <ul id="subnavegacion">
+                        <li class="nav_inicio"><a href="categorias.html#suvs">suvs</a></li>
+                        <li><a href="categorias.html#berlinas">berlinas</a></li>
+                        <li class="nav_final"><a href="categorias.html#todoterrenos">todoterrenos</a></li>
+                    </ul>
+                </li>
+                <li><a href="articulos.html">Artículos</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+        
+        <section id="seccion">
+            <h2 class="titulo_form">Regístrate!</h2>
+            <form novalidate>
+                <label for="correo">E-mail: </label>
+                <input type="text" name="#correo" id="correo" required/><br>
+                <label for="pass">Contraseña: </label>
+                <input type="password" name="#pass" id="pass" required/><br>
+                <label for="pass2">Repetir contraseña: </label>
+                <input type="password" name="#pass2" id="pass2" required/><br>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="#nombre" id="nombre" required/><br>
+                <label for="direccion">Dirección: </label>
+                <input type="text" name="#direccion" id="direccion" optional/><br>
+                <label for="postal">Código postal: </label>
+                <input type="text" name="#postal" pattern="[0-9]{5}" id="postal" optional/><br>
+                <label for="provincia">Provincia: </label>
+                <select name="#provincia" id="provincia">
+                    <option value="">- selecciona -</option>
+                    <option value='alava'>Álava</option>
+                    <option value='albacete'>Albacete</option>
+                    <option value='alicante'>Alicante/Alacant</option>
+                    <option value='almeria'>Almería</option>
+                    <option value='asturias'>Asturias</option>
+                    <option value='avila'>Ávila</option>
+                    <option value='badajoz'>Badajoz</option>
+                    <option value='barcelona'>Barcelona</option>
+                    <option value='burgos'>Burgos</option>
+                    <option value='caceres'>Cáceres</option>
+                    <option value='cadiz'>Cádiz</option>
+                    <option value='cantabria'>Cantabria</option>
+                    <option value='castellon'>Castellón/Castelló</option>
+                    <option value='ceuta'>Ceuta</option>
+                    <option value='ciudadreal'>Ciudad Real</option>
+                    <option value='cordoba'>Córdoba</option>
+                    <option value='cuenca'>Cuenca</option>
+                    <option value='girona'>Girona</option>
+                    <option value='laspalmas'>Las Palmas</option>
+                    <option value='granada'>Granada</option>
+                    <option value='guadalajara'>Guadalajara</option>
+                    <option value='guipuzcoa'>Guipúzcoa</option>
+                    <option value='huelva'>Huelva</option>
+                    <option value='huesca'>Huesca</option>
+                    <option value='illesbalears'>Illes Balears</option>
+                    <option value='jaen'>Jaén</option>
+                    <option value='acoruña'>A Coruña</option>
+                    <option value='larioja'>La Rioja</option>
+                    <option value='leon'>León</option>
+                    <option value='lleida'>Lleida</option>
+                    <option value='lugo'>Lugo</option>
+                    <option value='madrid'>Madrid</option>
+                    <option value='malaga'>Málaga</option>
+                    <option value='melilla'>Melilla</option>
+                    <option value='murcia'>Murcia</option>
+                    <option value='navarra'>Navarra</option>
+                    <option value='ourense'>Ourense</option>
+                    <option value='palencia'>Palencia</option>
+                    <option value='pontevedra'>Pontevedra</option>
+                    <option value='salamanca'>Salamanca</option>
+                    <option value='segovia'>Segovia</option>
+                    <option value='sevilla'>Sevilla</option>
+                    <option value='soria'>Soria</option>
+                    <option value='tarragona'>Tarragona</option>
+                    <option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+                    <option value='teruel'>Teruel</option>
+                    <option value='toledo'>Toledo</option>
+                    <option value='valencia'>Valencia/Valéncia</option>
+                    <option value='valladolid'>Valladolid</option>
+                    <option value='vizcaya'>Vizcaya</option>
+                    <option value='zamora'>Zamora</option>
+                    <option value='zaragoza'>Zaragoza</option>
+                </select><br>
+                <label for="facebook">Facebook: </label>
+                <input type="url" name="#facebook" id="facebook" optional/><br>
+                <label for="telf">Teléfono: </label>
+                <input type="text" name="#telf" pattern="[0-9]{9}" id="telf" optional/><br>
+                <label>Categorías:</label>
+                <div>
+                    <ul>
+                        <li><input type="checkbox" id="Suvs" name="Suvs"/><label for="#Suvs">Suvs</label></li>
+                        <li><input type="checkbox" id="Berlinas" name="Berlinas"/><label for="#Berlinas">Berlinas</label></li>
+                        <li><input type="checkbox" id="Todoterrenos" name="Todoterrenos"/><label for="#Todoterrenos">Todoterrenos</label></li>
+                    </ul>
+                </div>
+                <label for="conoces">¿Cómo nos conociste?</label><br>
+                <div>
+                    <ul>
+                        <li><input type="radio" id="buscador" name="conoces" value="buscador"><label for="#buscador">Buscador</label></li>
+                        <li><input type="radio" id="amigo" name="conoces" value="amigo"><label for="#amigo">Amigo</label></li>
+                        <li><input type="radio" id="radio" name="conoces" value="radio"><label for="#radio">Radio</label></li>
+                        <li><input type="radio" id="television" name="conoces" value="television"><label for="#television">Televisión</label></li>
+                        <li><input type="radio" id="prensa" name="conoces" value="prensa"><label for="#prensa">Prensa</label></li>
+                    </ul>
+                </div>
+                <input type="submit">
+            </form>
+        </section>
+        <footer id="pie">
+            &copy; 2020 Manuel Tejada Guzmán
+        </footer>
+    </body>
+</html>

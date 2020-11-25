@@ -1,0 +1,234 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-nov-2020, 20:29:59
+    Author     : manueltejadaguzman
+*/
+
+body{
+    background: gray;
+}
+#cabecera{
+    margin-top: -22px;
+}
+
+#navegacion{
+    margin-top: -10px;
+}
+
+#cabecera, #navegacion, #pie{
+    background: -ms-radial-gradient(circle, black 0%, gray 75%);
+    background: -webkit-radial-gradient(circle, black 0%, gray 75%);
+    background: -moz-radial-gradient(circle, black 0%, gray 75%);
+    background: -o-radial-gradient(circle, black 0%, gray 75%);
+    text-align: center;
+    color:white;
+}
+
+#navegacion a {
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: -ms-radial-gradient(circle, black 0%, gray 75%);
+    background: -webkit-radial-gradient(circle, black 0%, gray 75%);
+    background: -moz-radial-gradient(circle, black 0%, gray 75%);
+    background: -o-radial-gradient(circle, black 0%, gray 75%);
+}
+
+#navegacion ul{
+    margin-left: 25%;
+    list-style-type: none;
+    padding: 0px;
+}
+
+#navegacion ul li{
+    float: left;
+}
+
+#navegacion ul li a{
+    display: block;
+}
+
+#navegacion ul li ul{
+    display: none;
+}
+
+#navegacion ul li:hover ul{
+    display:block;
+}
+
+.nav_inicio{
+    border: 1px;
+    border-color: black;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nav_final{
+    border: 1px;
+    border-color: black;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#pie{
+    margin-bottom: -10px;
+}
+
+#seccion{
+    clear: both;
+}
+
+#seccion h2{
+    text-decoration: underline;
+    margin: 20px 50px;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+}
+
+th{
+    border: 1px solid black;
+    vertical-align: central;
+    background: #FF532E;
+}
+
+td{
+    border: 1px solid whitesmoke;
+    vertical-align: central;
+}
+
+th:nth-child(1) {
+  width:min-content;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #FF6341;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FEA997;
+}
+
+.td_blanco{
+    background: grey;
+    border: 0px;
+}
+
+.detalles{
+    border-top: 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.detalles a{
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.articulos{
+    border-bottom: 0px;
+}
+
+table tr td a{
+    text-decoration: none;
+    color:lightskyblue;
+}
+
+table tr td a:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+a:visited{
+    color: darkblue;
+}
+
+section ul li ol, section ul li ol li dd{
+    display: none;
+}
+section ul li:hover ol{
+    display: block;
+}
+
+section ul li ol li:hover dd{
+    display: block;
+}
+
+.titulo_form{
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+}
+
+form{
+    color:#0016b0;
+    width:300px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#ccc;
+    font-family: courier;
+    font-size: 13px;
+}
+
+form label{
+    float: left;
+    text-align: right;
+    width: 150px;
+    margin: 0% 0%;
+}
+
+input{
+    border-radius: 6px;
+}
+
+input:required{
+    border: 1px solid red;
+}
+
+input:optional{
+    border: 1px solid green;
+}
+
+select, input{
+    width: 125px;
+}
+
+form div{
+    clear: both;
+    margin-left: 35%;
+}
+
+form div li{
+    list-style-type: none;
+}
+
+form div input, form div label{
+    float: none;
+    width: 10px;
+}
+
+input[type="submit"]{
+    border: 0px;
+    width: 100px;
+    margin: 0px 100px;
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+input[type="submit"]:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+    cursor:pointer;
+}
