@@ -11,6 +11,7 @@ and open the template in the editor.
 body{
     background: gray;
 }
+
 #cabecera{
     margin-top: -22px;
 }
@@ -30,7 +31,7 @@ body{
     color:white;
 }
 
-#navegacion a {
+#navegacion > ul > li > a {
     color: white;
     text-decoration: none;
     padding-left: 25%;
@@ -58,34 +59,36 @@ body{
     display: none;
     position: absolute;
     margin-left: 100px;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 100px;
+    background: gray;
 }
 
 #navegacion ul li:hover ul{
     display: block;
 }
 
-.nav_inicio{
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+#navegacion ul li ul > li{
+    width: 150px;
+    margin-left: -40px;
     border-radius: 6px;
-    background: gray;
 }
 
-.nav_final{
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
-    border-radius: 6px;
-    background: gray;
-}
 
 .clear {
     clear: both;
 }
 
 .clear > a{
-    width: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    width: 100px;
+    background: -ms-linear-gradient(180deg, gray, black);
+    background: -webkit-linear-gradient(180deg, gray, black);
+    background: -moz-linear-gradient(180deg, gray, black);
+    background: -o-linear-gradient(180deg, gray, black);
 }
 
 #pie{
@@ -164,7 +167,7 @@ table tr td a:hover{
 }
 
 a:visited{
-    color: darkblue;
+    color:aquamarine;
 }
 
 section ul li ol, section ul li ol li dd{
