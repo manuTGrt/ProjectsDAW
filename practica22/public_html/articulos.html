@@ -17,130 +17,130 @@ and open the template in the editor.
             <img src="img/coche_inicio.jpg" alt="inicio" width="50%"/>
         </header>
         <nav id="navegacion">
-            
+
         </nav>
         <section id="seccion">
             <h2>Artículos</h2>
             <table>
                 <tr>
                     <td class="td_blanco"></td>
-                    <th>Delantera</th>
-                    <th>Trasera</th>
-                    <th>4x4</th>
+                    <th colspan="2">Delantera</th>
+                    <th colspan="2">Trasera</th>
+                    <th colspan="2">4x4</th>
                 </tr>
                 <tr>
                     <th rowspan="2">Suvs</th>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://fotos00.autofacil.es/2018/11/16/1024x341/seatateca953.jpg">
-                            <img src="https://fotos00.autofacil.es/2018/11/16/1024x341/seatateca953.jpg" width="400"/>
+                            <img src="https://fotos00.autofacil.es/2018/11/16/1024x341/seatateca953.jpg"/>
                         </a>
                     </td>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://soymotor.com/sites/default/files/styles/mega/public/imagenes/noticia/alfa_romeo_stelvio_30.jpg?itok=gHnuGLOD">
-                            <img src="https://soymotor.com/sites/default/files/styles/mega/public/imagenes/noticia/alfa_romeo_stelvio_30.jpg?itok=gHnuGLOD" width="400">
+                            <img src="https://soymotor.com/sites/default/files/styles/mega/public/imagenes/noticia/alfa_romeo_stelvio_30.jpg?itok=gHnuGLOD">
                         </a>
                     </td>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="http://a0.cdnfan.com/images/M/4/4/1/0/jeep-renagade_hd_83532.jpg">
-                            <img src="http://a0.cdnfan.com/images/M/4/4/1/0/jeep-renagade_hd_83532.jpg" width="400">
+                            <img src="http://a0.cdnfan.com/images/M/4/4/1/0/jeep-renagade_hd_83532.jpg">
                         </a>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                    <tr>
-                        <td class="detalles">
-                            <a href="https://fotos00.autofacil.es/2018/11/16/1024x341/seatateca953.jpg">
-                                Detalles
-                            </a>
-                        </td>
-                        <td>precio:</td>
-                    </tr>
-                    </td>
+                <tr id="fila1">
+                    <td class="detalles">
                         <a href="https://fotos00.autofacil.es/2018/11/16/1024x341/seatateca953.jpg">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">15000€</td>
                     <td class="detalles">
                         <a href="https://soymotor.com/sites/default/files/styles/mega/public/imagenes/noticia/alfa_romeo_stelvio_30.jpg?itok=gHnuGLOD">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">20000€</td>
                     <td class="detalles">
                         <a href="http://a0.cdnfan.com/images/M/4/4/1/0/jeep-renagade_hd_83532.jpg">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">30000€</td>
                 </tr>
                 <tr>
                     <th rowspan="2">Berlinas</th>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://www.autofacil.es/elementosWeb/gestionCajas/AUF/Image/2019//Peugeot_508.jpg">
-                            <img src="https://www.autofacil.es/elementosWeb/gestionCajas/AUF/Image/2019//Peugeot_508.jpg" width="400">
+                            <img src="https://www.autofacil.es/elementosWeb/gestionCajas/AUF/Image/2019//Peugeot_508.jpg">
                         </a>
                     </td>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/noticias_bmw/NOTICIAS_BMW_SerieMMaximasPrestaciones_27-04-2017_AEM.jpg">
-                            <img src="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/noticias_bmw/NOTICIAS_BMW_SerieMMaximasPrestaciones_27-04-2017_AEM.jpg" width="400">
+                            <img src="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/noticias_bmw/NOTICIAS_BMW_SerieMMaximasPrestaciones_27-04-2017_AEM.jpg">
                         </a>
                     </td>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://www.quadis.es/documents/80345/93398/cinco-berlinas-familiares-4x4.jpg/496325e4-464b-4409-ba7a-5c7edd2b1db1?t=1473161383000">
-                            <img src="https://www.quadis.es/documents/80345/93398/cinco-berlinas-familiares-4x4.jpg/496325e4-464b-4409-ba7a-5c7edd2b1db1?t=1473161383000" width="400">
+                            <img src="https://www.quadis.es/documents/80345/93398/cinco-berlinas-familiares-4x4.jpg/496325e4-464b-4409-ba7a-5c7edd2b1db1?t=1473161383000">
                         </a>
                     </td>
                 </tr>
-                <tr>
+                <tr  id="fila2">
                     <td class="detalles">
                         <a href="https://www.autofacil.es/elementosWeb/gestionCajas/AUF/Image/2019//Peugeot_508.jpg">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">35000€</td>
                     <td class="detalles">
                         <a href="https://www.bmw.es/content/dam/bmw/marketES/bmw_es/noticias_bmw/NOTICIAS_BMW_SerieMMaximasPrestaciones_27-04-2017_AEM.jpg">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">60000€</td>
                     <td class="detalles">
                         <a href="https://www.quadis.es/documents/80345/93398/cinco-berlinas-familiares-4x4.jpg/496325e4-464b-4409-ba7a-5c7edd2b1db1?t=1473161383000">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">50000€</td>
                 </tr>
                 <tr>
                     <th rowspan="2">Todoterrenos</th>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328787-diez-todoterrenos-mas-salvajes.jpg?itok=aOs6RFwV">
-                            <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328787-diez-todoterrenos-mas-salvajes.jpg?itok=aOs6RFwV" width="400">
+                            <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328787-diez-todoterrenos-mas-salvajes.jpg?itok=aOs6RFwV">
                         </a>
                     </td>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328783-diez-todoterrenos-mas-salvajes.jpg?itok=3iLHmaTm">
-                            <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328783-diez-todoterrenos-mas-salvajes.jpg?itok=3iLHmaTm" width="400">
+                            <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328783-diez-todoterrenos-mas-salvajes.jpg?itok=3iLHmaTm">
                         </a>
                     </td>
-                    <td class="articulos">
+                    <td class="articulos" colspan="2">
                         <a href="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328799-diez-todoterrenos-mas-salvajes.jpg?itok=QBqnzDlT">
-                            <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328799-diez-todoterrenos-mas-salvajes.jpg?itok=QBqnzDlT" width="400">
+                            <img src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328799-diez-todoterrenos-mas-salvajes.jpg?itok=QBqnzDlT">
                         </a>
                     </td>
                 </tr>
-                <tr>
+                <tr  id="fila3">
                     <td class="detalles">
                         <a href="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328787-diez-todoterrenos-mas-salvajes.jpg?itok=aOs6RFwV">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">30000€</td>
                     <td class="detalles">
                         <a href="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328783-diez-todoterrenos-mas-salvajes.jpg?itok=3iLHmaTm">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">40000€</td>
                     <td class="detalles">
                         <a href="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2014/03/328799-diez-todoterrenos-mas-salvajes.jpg?itok=QBqnzDlT">
                             Detalles
                         </a>
                     </td>
+                    <td class="precio" onclick="cambiacolor()">60000€</td>
                 </tr>
             </table>
         </section>
