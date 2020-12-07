@@ -267,14 +267,14 @@ dd{
 }
 
 .RedAndWhite{
-    background-color: red;
+    background-color: red !important;
     color: white;
     border-top: 0px;
     width: 250px;
 }
 
 .BlueAndYellow{
-    background-color: blue;
+    background-color: blue !important;
     color: yellow;
     border-top: 0px;
     width: 250px;

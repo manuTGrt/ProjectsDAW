@@ -48,10 +48,16 @@ nav.innerHTML=menuHTML;
 
 /*Cambio de color de la fila de la celda precio*/
 
-function cambiacolor(){
-    let precio = document.getElementsByClassName("precio");
+function cambiacolor(precio){
     let fila=precio.parentNode;
-    fila.className="RedAndWhite";
+    if(fila.className=="RedAndWhite"){
+        fila.className="BlueAndYellow";
+    } else if(fila.className=="BlueAndYellow"){
+        fila.className="";
+    }
+    else{
+        fila.className="RedAndWhite";
+    }
 }
 
 /*Termino de cambiar el color de la celda precio*/
@@ -71,16 +77,20 @@ window.onload = function () {
 
 let cp = document.getElementById("cp");
 cp.onchange = function () {
+    console.log("entró en onchange");
     let opciones = document.getElementsByTagName("option");
-    
+    if(opciones==null){
+        console.log("opciones vacío");
+    }
     let cpProv = parseInt(cp.value.substr(0, 2));
-
+    console.log(cpProv);
     for (let op of opciones) {
         if(op.hasAttribute("selected")) {
             op.removeAttribute("selected");
         }
-        if (op.value == cpProv - 1) {
+        if (parseInt(op.value) === cpProv - 1) {
             op.setAttribute("selected", "");
+            console.log(op.value);
         }
     }
 };
