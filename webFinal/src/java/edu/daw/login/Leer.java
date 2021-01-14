@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.annotation.Resource;
 import javax.naming.Context;
@@ -28,8 +29,8 @@ import javax.sql.DataSource;
 @WebServlet(name = "Leer", urlPatterns = {"/Leer"})
 public class Leer extends HttpServlet {
 
-    //@Resource(name = "connectionPool")
-    //private DataSource connectionPool;
+    @Resource(name = "connectionPool")
+    private DataSource connectionPool;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -43,8 +44,7 @@ public class Leer extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-
-        /*//guarda el mensaje sobre el resultado
+        //guarda el mensaje sobre el resultado
         String msg;
 
         //creo el usuario
@@ -53,10 +53,9 @@ public class Leer extends HttpServlet {
         //creamos las variables para la conexión, la sentecia y el resultado y asignar sus campos con los valores leidos
         Connection conn;
         PreparedStatement ps;
-        int filasAfectadas = 0;
+        ResultSet filasAfectadas;
 
         try {
-
             // Leer los parámetros enviados desde el formulario
             String correo = request.getParameter("email");
             String contrasenia = request.getParameter("pass");
@@ -71,16 +70,16 @@ public class Leer extends HttpServlet {
             conn = connectionPool.getConnection();
 
             // Preparar la sentencia SQL a realizar
-            ps = conn.prepareStatement("SELECT FROM USUARIOS (EMAIL, PASSWORD) VALUES (?, ?)");
+            ps = conn.prepareStatement("SELECT * FROM Usuarios where nombre=? and password=?");
             ps.setString(1, user.getCorreo());
             ps.setString(2, user.getContasenia());
 
             // Ejecutar instrucción SQL y guardar resultado en msg
-            filasAfectadas = ps.executeUpdate();
-            if (filasAfectadas > 0) {
+            filasAfectadas = ps.executeQuery();
+            if (filasAfectadas.first()) {
                 msg = "<p>OK: Sentencia select realizada correctamente</p>";
             } else {
-                msg = "<p>ERROR: Ha fallado la Inserción</p>";
+                msg = "<p>ERROR: Ha fallado la busqueda</p>";
             }
 
             ps.close();
@@ -94,12 +93,11 @@ public class Leer extends HttpServlet {
         } catch (NumberFormatException ex) {
             msg = "<p>ERROR: Parámetros no Válidos</p>";
             System.out.println(ex);
-        }*/
+        }
         
         // Implementar la respuesta HTML
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -108,7 +106,7 @@ public class Leer extends HttpServlet {
             out.println("<body>");
             out.println("<h1>DAW - Práctica 5.a) Servlets y Acceso a Datos mediante un Pool de conexiones</h1>");
             out.println("<h2>Estado de la inserción</h2>");
-            out.println("hola");
+            out.println(msg);
             out.println("<p><a href=\"index.html\">Volver</a>");
             out.println("</body>");
             out.println("</html>");
