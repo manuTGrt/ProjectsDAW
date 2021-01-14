@@ -28,8 +28,8 @@ import javax.sql.DataSource;
 @WebServlet(name = "Leer", urlPatterns = {"/Leer"})
 public class Leer extends HttpServlet {
 
-    @Resource(name = "connectionPool")
-    private DataSource connectionPool;
+    //@Resource(name = "connectionPool")
+    //private DataSource connectionPool;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -44,7 +44,7 @@ public class Leer extends HttpServlet {
             throws ServletException, IOException {
         
 
-        //guarda el mensaje sobre el resultado
+        /*//guarda el mensaje sobre el resultado
         String msg;
 
         //creo el usuario
@@ -94,7 +94,7 @@ public class Leer extends HttpServlet {
         } catch (NumberFormatException ex) {
             msg = "<p>ERROR: Parámetros no Válidos</p>";
             System.out.println(ex);
-        }
+        }*/
         
         // Implementar la respuesta HTML
         response.setContentType("text/html;charset=UTF-8");
@@ -108,7 +108,7 @@ public class Leer extends HttpServlet {
             out.println("<body>");
             out.println("<h1>DAW - Práctica 5.a) Servlets y Acceso a Datos mediante un Pool de conexiones</h1>");
             out.println("<h2>Estado de la inserción</h2>");
-            out.println(msg);
+            out.println("hola");
             out.println("<p><a href=\"index.html\">Volver</a>");
             out.println("</body>");
             out.println("</html>");
